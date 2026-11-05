@@ -21,6 +21,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val botonEjercicio2 = findViewById<Button>(R.id.botonEjercicio2)
+
+        botonEjercicio2.setOnClickListener {
+            val intent = Intent(this, Ejercicio2Activity::class.java)
+            startActivity(intent)
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
