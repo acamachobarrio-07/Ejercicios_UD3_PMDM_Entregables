@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--Izquierda. -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#4CAF50">
+
+    </LinearLayout>
+
+    <!-- Centro: contiene los tres botones -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Primer botón -->
+        <Button
+            android:id="@+id/botonPantalla1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir a pantalla 1" />
+
+        <!-- Segundo botón -->
+        <Button
+            android:id="@+id/botonPantalla2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir a pantalla 2" />
+
+        <!-- Tercer botón -->
+        <Button
+            android:id="@+id/botonPantalla3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir a pantalla 3" />
+
+    </LinearLayout>
+
+    <!--Derecha. -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#4CAF50">
+
+    </LinearLayout>
+
+</LinearLayout>
+

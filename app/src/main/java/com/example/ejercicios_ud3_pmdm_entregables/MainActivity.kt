@@ -37,6 +37,34 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        val botonEjercicio3 = findViewById<Button>(R.id.botonEjercicio3)
+
+        botonEjercicio3.setOnClickListener {
+            val intent = Intent(this, Ejercicio3Activity::class.java)
+            startActivity(intent)
+        }
+
+        val botonEjercicio4 = findViewById<Button>(R.id.botonEjercicio4)
+
+        botonEjercicio4.setOnClickListener {
+            val intent = Intent(this, Ejercicio4Activity::class.java)
+            startActivity(intent)
+        }
+
+        val botonEjercicio5 = findViewById<Button>(R.id.botonEjercicio1)
+
+        botonEjercicio5.setOnClickListener {
+            val intent = Intent(this, Ejercicio5Activity::class.java)
+            startActivity(intent)
+        }
+
+        val botonEjercicio6 = findViewById<Button>(R.id.botonEjercicio6)
+
+        botonEjercicio6.setOnClickListener {
+            val intent = Intent(this, Ejercicio1Activity::class.java)
+            startActivity(intent)
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
