@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<!-- FrameLayout principal que contiene los nueve cuadros -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Ejercicio4Activity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Primer cuadro: esquina superior izquierda -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|start"
+        android:background="#F44336" />
+
+    <!-- Segundo cuadro: centro superior -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|center_horizontal"
+        android:background="#2196F3" />
+
+    <!-- Tercer cuadro: esquina superior derecha -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|end"
+        android:background="#4CAF50" />
+
+    <!-- Cuarto cuadro: centro izquierda -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="#FF9800" />
+
+    <!-- Quinto cuadro: centro de la pantalla -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#9C27B0" />
+
+    <!-- Sexto cuadro: centro derecha -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|end"
+        android:background="#00BCD4" />
+
+    <!-- Séptimo cuadro: esquina inferior izquierda -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|start"
+        android:background="#FFEB3B" />
+
+    <!-- Octavo cuadro: centro inferior -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#E91E63" />
+
+    <!-- Noveno cuadro: esquina inferior derecha -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|end"
+        android:background="#795548" />
+
+</FrameLayout>
+
