@@ -21,11 +21,17 @@
              layout_height="wrap_content": ocupa solo la altura necesaria.
              android:text: indica el texto que aparece en el botón.
         -->
-        <Button
-            android:id="@+id/botonAct2"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Abrir URL" />
+            android:text="¡Han pasado 10 segundos!"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
 
     </LinearLayout>
 

@@ -21,4 +21,30 @@
         android:layout_height="wrap_content"
         android:text="Ejercicio 2" />
 
+    <Button
+        android:id="@+id/botonEjercicio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 3" />
+
+    <Button
+        android:id="@+id/botonEjercicio4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 4" />
+
+    <Button
+        android:id="@+id/botonEjercicio5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 5" />
+
+    <Button
+        android:id="@+id/botonEjercicio6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 6" />
+
+
+
 </LinearLayout>
