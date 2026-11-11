@@ -1,10 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ejercicio5Activity">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Pantalla que mostrará los números y resultados -->
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:padding="16dp" />
+
+    <!-- Tabla donde colocaremos los botones -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <!-- Primera fila: 7, 8, 9 y división -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/boton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/boton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/boton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/botonDividir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/" />
+
+        </TableRow>
+
+        <!-- Segunda fila: 4, 5, 6 y multiplicacion -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/boton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/boton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/boton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/botonMultiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x" />
+
+        </TableRow>
+
+        <!-- Tercera fila: 1, 2, 3 y resta -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/boton_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/boton_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/boton_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/boton_Resta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </TableRow>
+
+        <!-- Cuarta fila: C, 0, ., suma -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/botonC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/boton0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/botonDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="." />
+
+            <Button
+                android:id="@+id/botonSuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+        </TableRow>
+
+        <!-- Cuarta fila: C, 0, ., suma -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/botonIgual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:text="=" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

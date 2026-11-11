@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val botonEjercicio5 = findViewById<Button>(R.id.botonEjercicio1)
+        val botonEjercicio5 = findViewById<Button>(R.id.botonEjercicio5)
 
         botonEjercicio5.setOnClickListener {
             val intent = Intent(this, Ejercicio5Activity::class.java)
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         val botonEjercicio6 = findViewById<Button>(R.id.botonEjercicio6)
 
         botonEjercicio6.setOnClickListener {
-            val intent = Intent(this, Ejercicio1Activity::class.java)
+            val intent = Intent(this, Ejercicio6Activity::class.java)
             startActivity(intent)
         }
 

@@ -1,10 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!-- Pantalla principal del perfil -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ejercicio6Activity">
+    android:padding="20dp">
+
+    <!-- Imagen de Estrella que cambia al pulsar los botones -->
+    <ImageView
+        android:id="@+id/imagenPerfil"
+        android:layout_width="220dp"
+        android:layout_height="270dp"
+        android:src="@drawable/estrella"
+        android:scaleType="centerCrop"
+        android:contentDescription="Foto de Estrella"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/nombrePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Me llamo Estrella"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imagenPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/descripcionPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soy la jefa"
+        android:textSize="22sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/nombrePerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Título de los botones -->
+    <TextView
+        android:id="@+id/actitudesPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actitudes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/descripcionPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tabla con los tres botones -->
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/actitudesPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/botonPositividad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Positiva"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/botonAlegria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alegre"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/botonCantar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantando"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
