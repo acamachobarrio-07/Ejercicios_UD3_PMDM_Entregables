@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Ejercicio4Activity : AppCompatActivity() {
+    //no aplica, funcionalidad en xml
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

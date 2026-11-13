@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Ejercicio3Activity : AppCompatActivity() {
+    //botones para ir a las distintas pantallas
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

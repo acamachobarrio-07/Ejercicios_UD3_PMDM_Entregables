@@ -13,30 +13,16 @@ class Ejercicio5Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_ejercicio5)
 
-        // Adaptamos la pantalla a las barras del móvil
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(
-                systemBars.left + 20,
-                systemBars.top + 20,
-                systemBars.right + 20,
-                systemBars.bottom + 20
-            )
-            insets
-        }
-
-        // TextView donde aparecerán los números y resultados
         val resultado = findViewById<TextView>(R.id.textResultado)
 
-        // Variables para guardar los datos de la operación
+        // variables para guardar los datos de la operación
         var numero1 = 0.0
         var operacion = ""
         var nuevoNumero = true
 
-        // Función para mostrar los números pulsados
+        // mostrar los números pulsados
         fun escribirNumero(numero: String) {
             if (nuevoNumero || resultado.text.toString() == "0") {
                 resultado.text = numero
@@ -46,7 +32,7 @@ class Ejercicio5Activity : AppCompatActivity() {
             }
         }
 
-        // Buscamos todos los botones numéricos
+        // buscamos todos los botones numéricos
         val botones = listOf(
             R.id.boton0, R.id.boton_1, R.id.boton_2,
             R.id.boton_3, R.id.boton4, R.id.boton5,
@@ -54,7 +40,7 @@ class Ejercicio5Activity : AppCompatActivity() {
             R.id.boton9
         )
 
-        // Recorremos los botones y detectamos sus pulsaciones
+        // recorremos los botones y detectamos sus pulsaciones
         for (id in botones) {
             val boton = findViewById<Button>(id)
 
@@ -63,7 +49,7 @@ class Ejercicio5Activity : AppCompatActivity() {
             }
         }
 
-        // Botón para introducir decimales
+        // botón para introducir decimales
         findViewById<Button>(R.id.botonDecimal).setOnClickListener {
 
             if (nuevoNumero) {
@@ -74,14 +60,14 @@ class Ejercicio5Activity : AppCompatActivity() {
             }
         }
 
-        // Guardamos el primer número y la operación
+        // guardamos el primer número y la operación
         fun seleccionarOperacion(simbolo: String) {
             numero1 = resultado.text.toString().toDoubleOrNull() ?: 0.0
             operacion = simbolo
             nuevoNumero = true
         }
 
-        // Botones de las operaciones matemáticas
+        // botones de las operaciones
         findViewById<Button>(R.id.botonSuma).setOnClickListener {
             seleccionarOperacion("+")
         }
@@ -98,7 +84,7 @@ class Ejercicio5Activity : AppCompatActivity() {
             seleccionarOperacion("/")
         }
 
-        // Botón igual: realiza la operación
+        // =: realiza la operación
         findViewById<Button>(R.id.botonIgual).setOnClickListener {
 
             if (operacion.isNotEmpty()) {
@@ -144,7 +130,7 @@ class Ejercicio5Activity : AppCompatActivity() {
             }
         }
 
-        // Botón C: restablece toda la calculadora
+        // C: restablece toda la calculadora
         findViewById<Button>(R.id.botonC).setOnClickListener {
             numero1 = 0.0
             operacion = ""

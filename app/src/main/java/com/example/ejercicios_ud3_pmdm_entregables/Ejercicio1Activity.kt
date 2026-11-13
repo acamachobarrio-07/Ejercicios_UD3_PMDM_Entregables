@@ -13,25 +13,23 @@ class Ejercicio1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Asociamos esta activity con su diseño XML
         setContentView(R.layout.activity_ejercicio1)
 
-        // Buscamos el campo de texto y el botón XML
         val editUrl = findViewById<EditText>(R.id.editUrl)
         val botonAbrir = findViewById<Button>(R.id.botonAbrir)
 
-        // Detectamos cuando se pulsa el botón
+        // detecta cuando se pulsa el boton
         botonAbrir.setOnClickListener {
 
             // Obtenemos el texto y eliminamos todos los espacios de los extremos
             val url = editUrl.text.toString().trim()
 
-            // Comprobamos si la URL es válida
+            // comprobación de si la URL es válida
             if (url.isEmpty() ||
                 !Patterns.WEB_URL.matcher(url).matches() ||
                 !(url.startsWith("https://") || url.startsWith("http://")))  {
 
-                // Mostramos un mensaje de error sino es valida
+                // mensaje de error sino es valida
                 Toast.makeText(
                     this,
                     "Introduce una URL válida",
@@ -40,7 +38,7 @@ class Ejercicio1Activity : AppCompatActivity() {
 
             } else {
 
-                // Creamos un intent para abrir la dirección web
+                // usamos el intent para abrir la web
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 //ejecutamos el intent
                 startActivity(intent)
