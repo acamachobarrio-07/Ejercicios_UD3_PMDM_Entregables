@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--Contenedor principal que ocupa toda la pantalla
+    ancho y alto.
+    Reparto proporcional con layout_weight:
+    Columna izquierda 1, columna derecha 1, columna centro 3-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
     <!--Izquierda. -->
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -16,6 +20,10 @@
     </LinearLayout>
 
     <!-- Centro: contiene los tres botones -->
+    <!--Contenedor centro, cambia la orientación para alinear verticalmente
+    es decir, de arriba a abajo.
+    los botones se agrupan en el medio de la pantalla con android:gravity="center"
+    Los botones tienen un layout_width="match_parent" para ocupar todo el ancho disponible-->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -58,4 +66,3 @@
     </LinearLayout>
 
 </LinearLayout>
-

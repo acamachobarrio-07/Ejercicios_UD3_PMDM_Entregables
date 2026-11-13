@@ -29,7 +29,7 @@ class Ejercicio1Activity : AppCompatActivity() {
             // Comprobamos si la URL es válida
             if (url.isEmpty() ||
                 !Patterns.WEB_URL.matcher(url).matches() ||
-                !(url.startsWith("https://") || url.startsWith("http://"))|| url.startsWith("www."))  {
+                !(url.startsWith("https://") || url.startsWith("http://")))  {
 
                 // Mostramos un mensaje de error sino es valida
                 Toast.makeText(

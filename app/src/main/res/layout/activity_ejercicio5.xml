@@ -9,6 +9,8 @@
     android:gravity="center">
 
     <!-- Pantalla que mostrará los números y resultados -->
+    <!--Ocupa toda la mantalla match_parent con orientation="vertical"
+    android:gravity="end": alinea los números a la derecha-->
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
@@ -19,6 +21,7 @@
         android:padding="16dp" />
 
     <!-- Tabla donde colocaremos los botones -->
+    <!-- android:stretchColumns="*" todas las columnas deben estirarse por igual -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

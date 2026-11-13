@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- FrameLayout principal que contiene los nueve cuadros -->
+<!-- FrameLayout principal que contiene los nueve cuadros
+ diseñado para superponer vistas
+ android:layout_gravity le indica al contenedor hacia que bordes
+ debe empujarlo
+ Todos tienen un tamaño fijo-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
